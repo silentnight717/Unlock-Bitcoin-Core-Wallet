@@ -1,4 +1,4 @@
-# Unlock-Bitcoin-Core-wallet
+# Unlock-Bitcoin-Core-Wallet
 Unlocks Bitcoin Core BerkelyDB wallets by compiling a special pattern inside the encrypted password
 ## Introduction
 Bitcoin Core wallets are very well encrypted and they can hardly be broken at all. Bitcoin Core itself uses AES-256-CBC on its wallets which is a powerful encryption that would take a very long time to bruteforce with toaday's computational power. Also, these wallets have evolved over time, becoming much safer, so much harder to break. But there is a small loophole that I recently discovered. A loophole that allows you to unlock any Bitcoin Core wallet that is in BerkelyDB database format without having to bruteforce it. (SQLite wallets will not work) That's why I created this project. Let's start.
