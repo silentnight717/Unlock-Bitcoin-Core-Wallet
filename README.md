@@ -23,7 +23,7 @@ Now we move to the next step. With the private key, you can't do anything in the
 
 ![extract_password](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/extrtact_password.gif)
 
-Time has come to compile the new password that will unlock the wallet. All you have to do is copy the hexadecimal representation of the password and place it in the compile_password.rb script. This script takes the hexadecimal representation, converts it into the original state and then adds four special components in a pattern that has been proved to unlock the walet in the Bitcoin Core console. Those four components are control characters: (EM), (SYN), (DLE), and (DC3). These four components are mixed with the raw encrypted password in the specific pattern and all the result is placed in the console after the walletpassphrase command. 
+Time has come to compile the new password that will unlock the wallet. All you have to do is copy the hexadecimal representation of the password and place it in the compile_password.rb script. This script takes the hexadecimal representation, converts it into the original state and then adds four special components in a pattern that has been proved to unlock the wallet in the Bitcoin Core console. Those four components are control characters: (EM), (SYN), (DLE), and (DC3). These four components are mixed with the raw encrypted password in the specific pattern and all the result is placed in the console after the walletpassphrase command. 
 
 ![compile_password](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/compile_password.gif)
 
