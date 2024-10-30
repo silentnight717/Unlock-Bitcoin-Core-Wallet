@@ -31,4 +31,4 @@ Time has come to compile the new password that will unlock the wallet. All you h
 Well, these scripts are mostly intended for Linux terminals, but they can be run from any machine that has Ruby and ANSI colors installed. Just run ruby and put the script name.
 Example: ruby ckey_analyzer.rb  
 ## Contact
-You can contact me at the email silentnight1010100@gmail.com for any questions. Don't open issues unless you're very sure of the problem. Compile password script and bruteforce ckey script not for free. 
+You can contact me at the email silentnight58070@proton.me for any questions. Don't open issues unless you're very sure of the problem. Compile password script and bruteforce ckey script not for free. 
