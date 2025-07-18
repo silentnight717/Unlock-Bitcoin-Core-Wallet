@@ -19,7 +19,7 @@ If your private key is in order, then you can try to bruteforce it with the **br
 
 ![bruteforce_ckey](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/bruteforce_ckey.gif)
 
-Now we move on to the next step. With the private key, you can't do anything in the Bitcoin Core console. If you want to import it, you have to enter the password first. And in addition, the private key needs to be decrypted in order to import it. The next step is to extract the password from the wallet.dat file. You can do this using the **extract_password.rb** script. It extracts the password set by the user in a raw encrypted format, and also displays its correspondence in hexadecimal format.
+Now we move on to the next step. With the private key, you can't do anything in the Bitcoin Core console. If you want to import it, you have to enter the password first. Additionally, the private key needs to be decrypted in order to import it. The next step is to extract the password from the wallet.dat file. You can do this using the **extract_password.rb** script. It extracts the password set by the user in a raw encrypted format, and also displays its correspondence in hexadecimal format.
 
 ![extract_password](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/extract_password.gif)
 
