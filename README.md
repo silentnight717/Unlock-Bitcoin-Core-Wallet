@@ -41,6 +41,7 @@ gem install base32 base58
 ```
 ## How to use
 Well, these scripts are mostly intended for Linux terminals, but they can be run from any machine which has Ruby installed and supports ANSI colors. Just run ruby and put the script name.
+
 Example: 
 ```
 ruby ckey_analyzer.rb
