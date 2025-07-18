@@ -3,11 +3,11 @@ Unlocks Bitcoin Core BerkelyDB wallets by compiling a special pattern inside the
 ## Introduction
 Bitcoin Core wallets are very well encrypted and they can hardly be broken at all. Bitcoin Core itself uses AES-256-CBC on its wallets which is a powerful encryption that would take a very long time to bruteforce with toaday's computational power. Also, these wallets have evolved over time, becoming much safer, so much harder to break. But there is a small loophole that I recently discovered. A loophole that allows you to unlock any Bitcoin Core wallet that is in BerkelyDB database format without having to bruteforce it. (SQLite wallets will not work) That's why I created this project. Let's start.
 ## Explanation
-The "ckey" identifier inside the wallet dat file means the encrypted private key itself. It stands for compressed key. This private key is used directly to unlock the wallet and spend the funds. Because it's encrypted, there are very few chances to decrypt it.
+The "ckey" identifier inside the wallet.dat file means the encrypted private key itself. It stands for compressed key. This private key is used directly to unlock the wallet and spend the funds. Because it's encrypted, there are very few chances to decrypt it.
 
 ![ckey](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/ckey.png)
 
-So I designed a script to extract this private key. It searches the entire wallet dat file and extracts all private keys from it in their raw encrypted state. Then they are displayed in hexadecimal format.
+So, I designed a script to extract this private key. It searches the entire wallet dat file and extracts all private keys from it in their raw encrypted state. Then, they are displayed in hexadecimal format.
 
 ![extract_ckey](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/extract_ckey.gif) 
 
