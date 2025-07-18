@@ -57,4 +57,4 @@ ruby ckey_analyzer.rb
 - [X] minor code improvements
 
 ## Contact
-You can contact me at the email silentnight58070@proton.me for any questions. Don't open issues unless you're very sure of the problem. Compile password script is not for free. 
+You can contact me at the email silentnight58070@proton.me for any questions. Don't open issues unless you're very sure of the problem. **compile_password.rb** script is not for free. 
