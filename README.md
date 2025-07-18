@@ -11,15 +11,15 @@ So, I designed a script to extract this private key. It searches the entire wall
 
 ![extract_ckey](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/extract_ckey.gif) 
 
-Once you have received the private key, you can analyze it using the ckey_analyzer.rb script and check if it is correct.
+Once you have received the private key, you can analyze it using the **ckey_analyzer.rb** script and check if it is correct.
 
 ![ckey_analyzer](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/ckey_analyzer.gif)
 
-If your private key is in order, then you can try to bruteforce it with the bruteforce_ckey.rb script. Keep in mind that it can take a very long time if you are working with a weaker processor, designed before 2023. Furthermore, I do not guarantee anyone that it will be 100% successful.
+If your private key is in order, then you can try to bruteforce it with the **bruteforce_ckey.rb** script. Keep in mind that it can take a very long time if you are working with a weaker processor, designed before 2023. Furthermore, I do not guarantee anyone that it will be 100% successful.
 
 ![bruteforce_ckey](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/bruteforce_ckey.gif)
 
-Now we move on to the next step. With the private key, you can't do anything in the Bitcoin Core console. If you want to import it, you have to enter the password first. And in addition, the private key needs to be decrypted in order to import it. The next step is to extract the password from the wallet.dat file. You can do this using the extract_password.rb script. It extracts the password set by the user in a raw encrypted format, and also displays its correspondence in hexadecimal format.
+Now we move on to the next step. With the private key, you can't do anything in the Bitcoin Core console. If you want to import it, you have to enter the password first. And in addition, the private key needs to be decrypted in order to import it. The next step is to extract the password from the wallet.dat file. You can do this using the **extract_password.rb** script. It extracts the password set by the user in a raw encrypted format, and also displays its correspondence in hexadecimal format.
 
 ![extract_password](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/extract_password.gif)
 
@@ -27,7 +27,7 @@ Then, you can check this one too:
 
 ![password_analyzer](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/password_analyzer.gif)
 
-It’s time to compile the new password that will unlock your wallet. All you need to do is copy the hexadecimal representation of your password and place it in the compile_password.rb script. This script takes your password, converts it back to its original state, and then adds four special components in a pattern that has been proven to unlock the wallet in the Bitcoin Core console. These four components are control characters: (EM), (SYN), (DLE), and (DC3). These are mixed with the raw encrypted password in the specific pattern, and the entire result is placed in the console after the walletpassphrase command.
+It’s time to compile the new password that will unlock your wallet. All you need to do is copy the hexadecimal representation of your password and place it in the **compile_password.rb** script. This script takes your password, converts it back to its original state, and then adds four special components in a pattern that has been proven to unlock the wallet in the Bitcoin Core console. These four components are control characters: `(EM)`, `(SYN)`, `(DLE)`, and `(DC3)`. These are mixed with the raw encrypted password in the specific pattern, and the entire result is placed in the console after the walletpassphrase command.
 
 ![compile_password](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/compile_password.gif)
 
