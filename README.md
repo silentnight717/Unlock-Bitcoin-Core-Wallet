@@ -27,7 +27,7 @@ Then, you can check this one too:
 
 ![password_analyzer](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/password_analyzer.gif)
 
-It’s time to compile the new password that will unlock your wallet. All you need to do is copy the hexadecimal representation of your password and place it in the **compile_password.rb** script. This script takes your password, converts it back to its original state, and then adds four special components in a pattern that has been proven to unlock the wallet in the Bitcoin Core console. These four components are control characters: `(EM)`, `(SYN)`, `(DLE)`, and `(DC3)`. These are mixed with the raw encrypted password in the specific pattern, and the entire result is placed in the console after the walletpassphrase command.
+It’s time to compile the new password that will unlock your wallet. All you need to do is copy the hexadecimal representation of your password and place it in the **compile_password.rb** script. This script takes your password, converts it back to its original state, and then adds four special components in a pattern that has been proven to unlock the wallet in the Bitcoin Core console. These four components are control characters: `(EM)`, `(SYN)`, `(DLE)`, and `(DC3)`. They are mixed with the raw encrypted password in the specific pattern, and the entire result is placed in the console after the walletpassphrase command.
 
 ![compile_password](https://github.com/silentnight717/Unlock-Bitcoin-Core-Wallet/blob/main/assets/compile_password.gif)
 
